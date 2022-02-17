@@ -1,0 +1,116 @@
+  /* 
+  Версия V0.0.1
+  Файл стилей сайта Турист-pro
+  Адрес сайта iai.m2.wsr.ru
+  Автор: Иваницкий А.И.
+  Дата: 05.06.2022
+  Email: stydentrab@gmail.com
+  Компания: СПК http://spospk.ru */
+
+  /* Обнуляет ранее установленные параметры  */
+html,
+body{
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+/*1.Шапка содержащая логотип, телефон компании, дивиз */
+header{
+  background: white;
+  box-shadow: 0 2px 7px black;
+}
+/* Меню со ссылками в заголовке  */
+    
+header a {
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  font: bold;
+}
+/* Стиль button рисует кнопки*/
+  
+header button {
+  color: blue;
+  font-size: 17px;
+}
+
+.nav{
+  width: 75%;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* /1.Шапка содержащая логотип, телефон компании, дивиз */
+
+/* 2. Акции*/
+.slider {
+  height: 700px;
+  width: 50%;
+  margin: 25px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider_img {
+  /* Место положения слайдера*/
+  position: absolute;
+  /* Общее Время для цикла показа слайдера. Все картинки покажут за 50 сек*/
+  animation: round 30s infinite;
+  opacity: 0;
+  width: 100%;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+img:nth-child(1) {
+  animation-delay: 20s
+}
+
+img:nth-child(2) {
+  animation-delay: 15s
+}
+
+img:nth-child(3) {
+  animation-delay: 10s
+}
+
+img:nth-child(4) {
+  animation-delay: 5s
+}
+
+img:nth-child(5) {
+  animation-delay: 0
+}
+/* 2. /Акции*/
+
+/* 3. Управление бронированием*/
+.bron {
+  width: 90%;
+  background-color: white;
+  margin: 25px auto;
+  border-radius: 18px;
+}
+
+.alg_bron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 3. /Управление бронированием*/
+
+/* 4. Информация о компании */
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 4. /Информация о компании */
